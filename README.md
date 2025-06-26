@@ -6,19 +6,6 @@ An idle/incremental web game inspired by Cookie Clicker — click to earn resour
 
 ---
 
-## 🎮 Features (Planned & In Progress)
-
-- [x] Click button to generate resources
-- [x] Track total clicks and resources
-- [ ] Buy upgrades to increase resource generation
-- [ ] Automate resource generation over time
-- [ ] Unlockable achievements
-- [ ] Save/load game state (via localStorage)
-- [ ] Responsive UI and animations
-- [ ] Sound effects and music (optional)
-
----
-
 ## 🛠 Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript  
