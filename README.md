@@ -1,4 +1,4 @@
-# Idle Game (Working Title)
+# Space Station Tycoon
 
 An idle/incremental web game inspired by Cookie Clicker — click to earn resources, automate production, and scale up your empire while the game runs in the background. Built as a personal project to explore game logic, UI design, and to progress my learning of the JavaScript programming language.
 
