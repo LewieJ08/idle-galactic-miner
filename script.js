@@ -51,7 +51,7 @@ cursorButton.addEventListener("click", function () {
     if (value >= 15) {
         value -= 15;
         cps += 0.1;
-        cursorNum += 1;
+        cursorNum++;
         cursorNewCost = priceIncrease(15, cursorNum);
         updateHTML();
     }
