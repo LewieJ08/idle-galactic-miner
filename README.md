@@ -4,6 +4,10 @@ An idle/incremental web game inspired by Cookie Clicker — click to earn resour
 
 > ⚠️ This game is still in early development. Expect bugs, placeholders, and features in progress!
 
+The current version of the game is avalable via cloning the repo.
+
+When the game reaches an appropriate stage early versions will be deployed.
+
 ---
 
 ## 🛠 Tech Stack
@@ -14,7 +18,7 @@ An idle/incremental web game inspired by Cookie Clicker — click to earn resour
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Install (via git clone)
 
 To run the game locally:
 
