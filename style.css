@@ -14,14 +14,21 @@ li {
     display: inline;
 }
 
-.buttonContainer {
-    text-align: left;
-    margin: 100px;
-    max-width: fit-content;
+.gameContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh; 
 }
 
-.shopContainer {
-    margin: 100px;
+.buttonContainer, .middleContainer, .shopContainer {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: solid;
+    border-color: white;
 }
 
 .button {
