@@ -3,8 +3,9 @@ const valueH1 = document.getElementById("value");
 const cursorButton = document.getElementById("cursor");
 const cpsH3 = document.getElementById("cps");
 
-// Building Costs
+// Building Costs and Amounts
 const cursorCost = document.getElementById("cursorCost")
+const cursorAmount = document.getElementById("cursorAmount");
 
 // Building Amounts & New Costs
 
@@ -23,6 +24,7 @@ function updateHTML() {
     }
     
     cursorCost.innerHTML = Math.round(cursorNewCost * 10) / 10;
+    cursorAmount.innerHTML = cursorNum
 }
 
 function priceIncrease(baseCost, buildingNum) {
