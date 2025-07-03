@@ -10,7 +10,8 @@ li {
 }
 
 .cps, .cpsValue, 
-.cursorCost {
+.cursorCost, .cursorAmountName,
+.cursorAmount {
     display: inline;
 }
 
@@ -29,6 +30,10 @@ li {
     text-align: center;
     border: solid;
     border-color: white;
+}
+
+.middleContainer {
+    text-align: left;
 }
 
 .button {
