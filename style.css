@@ -37,6 +37,9 @@ li {
     text-align: left;
     flex: 2;
 }
+.shopContainer {
+    text-align: left;
+}
 
 .button {
     height: 100px;
