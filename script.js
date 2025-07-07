@@ -1,7 +1,7 @@
 const button = document.getElementById("button");
-const valueH1 = document.getElementById("value");
+const oreH1 = document.getElementById("value");
 const cursorButton = document.getElementById("cursor");
-const cpsH3 = document.getElementById("cps");
+const opsH3 = document.getElementById("cps");
 
 // Building Costs and Amounts
 const cursorCost = document.getElementById("cursorCost")
@@ -12,12 +12,12 @@ const cursorAmount = document.getElementById("cursorAmount");
 let cursorNum = 0;
 let cursorNewCost;
 
-let cps = 0;
-let value = 0;
+let ops = 0;
+let ore = 0;
 
 function updateHTML() {
-    valueH1.innerHTML = Math.round(value * 10) / 10;
-    cpsH3.innerHTML = Math.round(cps * 10) / 10; 
+    oreH1.innerHTML = Math.round(ore * 10) / 10;
+    opsH3.innerHTML = Math.round(ops * 10) / 10; 
 
     if (isNaN(cursorNewCost)) {
         cursorNewCost = 15;
@@ -32,17 +32,17 @@ function priceIncrease(baseCost, buildingNum) {
     return price;
 }
 
-// CPS Func + CPS Interval 
+// OPS Func + OPS Interval 
 
-function CpsFunc() {
-    value += cps;
+function OpsFunc() {
+    ore += ops;
     updateHTML();
 }
 
-setInterval(CpsFunc, 1000)
+setInterval(OpsFunc, 1000)
 
 button.addEventListener("click", function () {
-    value++;
+    ore++;
     updateHTML();
 });
 
@@ -50,9 +50,9 @@ button.addEventListener("click", function () {
 
 // Cursor Func
 cursorButton.addEventListener("click", function () {
-    if (value >= 15) {
-        value -= 15;
-        cps += 0.1;
+    if (ore >= 15) {
+        ore -= 15;
+        ops += 0.1;
         cursorNum++;
         cursorNewCost = priceIncrease(15, cursorNum);
         updateHTML();
