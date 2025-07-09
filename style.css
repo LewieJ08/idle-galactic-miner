@@ -33,6 +33,10 @@ li {
     border-color: white;
 }
 
+.buttonContainer{
+    cursor: url('/assets/images/pickaxeCursorIcon.png'), auto;
+}
+
 .middleContainer {
     text-align: left;
     flex: 2;
@@ -44,8 +48,9 @@ li {
 .button {
     height: 100px;
     width: 100px;   
-    border-radius: 20px;
+    border-radius: 50%;
     background-color: rgb(255, 0, 0);
+    cursor: url('/assets/images/pickaxeCursorIcon.png'), auto;
 }
 
 .button:active {
