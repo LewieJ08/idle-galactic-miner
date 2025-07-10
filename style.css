@@ -45,16 +45,22 @@ li {
     text-align: left;
 }
 
-.button {
-    height: 100px;
-    width: 100px;   
-    border-radius: 50%;
-    background-color: rgb(255, 0, 0);
+.button { 
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
     cursor: url('/assets/images/pickaxeCursorIcon.png'), auto;
 }
 
-.button:active {
-    background-color: rgb(255, 73, 73);
+.asteroidImg {
+    height: 200px;
+}
+
+.button:active .asteroidImg{
+    cursor: url('/assets/images/altPickaxeCursorIcon.png'), auto;
+    height: 195px;
+    bottom: 10px;
+    
 }
 
 .shopButton {
