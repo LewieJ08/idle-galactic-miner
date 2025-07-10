@@ -9,7 +9,7 @@ li {
     list-style-type: none;
 }
 
-.cps, .cpsValue, 
+.ops, .opsValue, 
 .cursorCost, .cursorAmountName,
 .cursorAmount {
     display: inline;
