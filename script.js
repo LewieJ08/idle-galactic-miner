@@ -10,7 +10,7 @@ const cursorAmount = document.getElementById("cursorAmount");
 // Building Amounts & New Costs
 
 let cursorNum = 0;
-let cursorNewCost;
+let cursorNewCost = 15;
 
 let ops = 0;
 let ore = 0;
@@ -50,8 +50,8 @@ button.addEventListener("click", function () {
 
 // Cursor Func
 cursorButton.addEventListener("click", function () {
-    if (ore >= 15) {
-        ore -= 15;
+    if (ore >= cursorNewCost) {
+        ore -= cursorNewCost;
         ops += 0.1;
         cursorNum++;
         cursorNewCost = priceIncrease(15, cursorNum);
