@@ -1,8 +1,10 @@
 # Idle Galactic Miner
 
-An idle/incremental web game inspired by Cookie Clicker — click to earn resources, automate production, and scale up your empire while the game runs in the background. Built as a personal project to explore game logic, UI design, and to progress my learning of the JavaScript programming language.
+**Idle Galactic Miner** is a space-themed incremental/idle game where you mine asteroids, automate production, and scale your intergalactic ore empire — even while you're AFK. Inspired by *Cookie Clicker*, but set among the stars.
 
-> ⚠️ This game is still in early development. Expect bugs, placeholders, and features in progress!
+This is a personal project built to improve my understanding of **JavaScript**, **game logic**, and **UI layout** through practical development.
+
+> ⚠️ Still in early development — features, art, and balancing are all a work-in-progress!
 
 The current version of the game is avalable via cloning the repo.
 
