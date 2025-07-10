@@ -1,7 +1,7 @@
 const button = document.getElementById("button");
-const oreH1 = document.getElementById("value");
+const oreH1 = document.getElementById("ore");
 const cursorButton = document.getElementById("cursor");
-const opsH3 = document.getElementById("cps");
+const opsH3 = document.getElementById("ops");
 
 // Building Costs and Amounts
 const cursorCost = document.getElementById("cursorCost")
