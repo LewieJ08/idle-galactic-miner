@@ -4,7 +4,7 @@ const cursorButton = document.getElementById("cursor");
 const opsH3 = document.getElementById("ops");
 
 // Building Costs and Amounts
-const cursorCost = document.getElementById("cursorCost")
+const cursorCost = document.getElementById("cursorCost");
 const cursorAmount = document.getElementById("cursorAmount");
 
 // Building Amounts & New Costs
