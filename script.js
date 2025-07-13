@@ -1,16 +1,16 @@
 const button = document.getElementById("button");
 const oreH1 = document.getElementById("ore");
-const cursorButton = document.getElementById("cursor");
+const droneButton = document.getElementById("drone");
 const opsH3 = document.getElementById("ops");
 
 // Building Costs and Amounts
-const cursorCost = document.getElementById("cursorCost");
-const cursorAmount = document.getElementById("cursorAmount");
+const droneCost = document.getElementById("droneCost");
+const droneAmount = document.getElementById("droneAmount");
 
 // Building Amounts & New Costs
 
-let cursorNum = 0;
-let cursorNewCost = 15;
+let droneNum = 0;
+let droneNewCost = 15;
 
 let ops = 0;
 let ore = 0;
@@ -19,12 +19,12 @@ function updateHTML() {
     oreH1.innerHTML = Math.round(ore * 10) / 10;
     opsH3.innerHTML = Math.round(ops * 10) / 10; 
 
-    if (isNaN(cursorNewCost)) {
-        cursorNewCost = 15;
+    if (isNaN(droneNewCost)) {
+        droneNewCost = 15;
     }
     
-    cursorCost.innerHTML = Math.round(cursorNewCost * 10) / 10;
-    cursorAmount.innerHTML = cursorNum
+    droneCost.innerHTML = Math.round(droneNewCost * 10) / 10;
+    droneAmount.innerHTML = droneNum
 }
 
 function priceIncrease(baseCost, buildingNum) {
@@ -34,12 +34,12 @@ function priceIncrease(baseCost, buildingNum) {
 
 // OPS Func + OPS Interval 
 
-function OpsFunc() {
+function opsFunc() {
     ore += ops;
     updateHTML();
 }
 
-setInterval(OpsFunc, 1000)
+setInterval(opsFunc, 1000)
 
 button.addEventListener("click", function () {
     ore++;
@@ -48,16 +48,16 @@ button.addEventListener("click", function () {
 
 // SHOP BUTTONS
 
-// Cursor Func
-cursorButton.addEventListener("click", function () {
-    if (ore >= cursorNewCost) {
-        ore -= cursorNewCost;
+// drone Func
+droneButton.addEventListener("click", function () {
+    if (ore >= droneNewCost) {
+        ore -= droneNewCost;
         ops += 0.1;
-        cursorNum++;
-        cursorNewCost = priceIncrease(15, cursorNum);
+        droneNum++;
+        droneNewCost = priceIncrease(15, droneNum);
         updateHTML();
     }
     else {
         window.alert("Not Enough Funds");
     }
-});
+})
