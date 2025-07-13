@@ -10,8 +10,8 @@ li {
 }
 
 .ops, .opsValue, 
-.cursorCost, .cursorAmountName,
-.cursorAmount {
+.droneCost, .droneAmountName,
+.droneAmount {
     display: inline;
 }
 
