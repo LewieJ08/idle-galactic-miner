@@ -23,7 +23,7 @@ function updateHTML() {
         droneNewCost = 15;
     }
     
-    droneCost.innerHTML = Math.round(droneNewCost * 10) / 10;
+    droneCost.innerHTML = Math.ceil(droneNewCost);
     droneAmount.innerHTML = droneNum
 }
 
