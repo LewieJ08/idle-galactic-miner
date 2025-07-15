@@ -11,7 +11,7 @@ li {
 }
 
 .ops, .opsValue, 
-.buildingCost, .AmountName,
+.buildingCost, .amountName,
 .buildingAmount {
     display: inline;
 }
