@@ -43,7 +43,12 @@ li {
     flex: 2;
 }
 .shopContainer {
-    text-align: left;
+    padding: 0;
+}
+
+.shopTitleContainer {
+    text-align: center;
+    border: solid white;
 }
 
 .button { 
