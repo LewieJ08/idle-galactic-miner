@@ -5,6 +5,7 @@ const opsH3 = document.getElementById("ops");
 // Shop Elements
 const droneButton = document.getElementById("drone");
 const miningBotButton = document.getElementById("miningBot");
+const oreExtButton = document.getElementById("oreExt")
 
 // Building Costs and Amounts
 const droneCost = document.getElementById("droneCost");
@@ -13,6 +14,9 @@ const droneAmount = document.getElementById("droneAmount");
 const miningBotCost = document.getElementById("miningBotCost");
 const miningBotAmount = document.getElementById("miningBotAmount");
 
+const oreExtCost = document.getElementById("oreExtCost");
+const oreExtAmount = document.getElementById("oreExtAmount");
+
 // Building Amounts & New Costs
 
 let droneNum = 0;
@@ -20,6 +24,9 @@ let droneNewCost = 15;
 
 let miningBotNum = 0;
 let miningBotNewCost = 100;
+
+let oreExtNum = 0;
+let oreExtNewCost = 1100;
 
 let ops = 0;
 let ore = 0;
@@ -33,6 +40,9 @@ function updateHTML() {
 
     miningBotCost.innerHTML = Math.ceil(miningBotNewCost);
     miningBotAmount.innerHTML = miningBotNum;
+
+    oreExtCost.innerHTML = Math.ceil(oreExtNewCost);
+    oreExtAmount.innerHTML = oreExtNum;
 }
 
 function priceIncrease(baseCost, buildingNum) {
@@ -77,6 +87,20 @@ miningBotButton.addEventListener("click", function () {
         ops += 1;
         miningBotNum++;
         miningBotNewCost = priceIncrease(100, miningBotNum);
+        updateHTML();
+    }
+    else {
+        window.alert("Not Enough Ore");
+    }
+})
+
+// oreExt func
+oreExtButton.addEventListener("click", function () {
+    if (ore >= oreExtNewCost) {
+        ore -= oreExtNewCost;
+        ops += 8;
+        oreExtNum++;
+        oreExtNewCost = priceIncrease(1100, oreExtNum);
         updateHTML();
     }
     else {
