@@ -11,8 +11,8 @@ li {
 }
 
 .ops, .opsValue, 
-.droneCost, .droneAmountName,
-.droneAmount {
+.buildingCost, .AmountName,
+.buildingAmount {
     display: inline;
 }
 
