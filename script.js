@@ -5,7 +5,8 @@ const opsH3 = document.getElementById("ops");
 // Shop Elements
 const droneButton = document.getElementById("drone");
 const miningBotButton = document.getElementById("miningBot");
-const oreExtButton = document.getElementById("oreExt")
+const oreExtButton = document.getElementById("oreExt");
+const drillRovButton = document.getElementById("drillRov");
 
 // Building Costs and Amounts
 const droneCost = document.getElementById("droneCost");
@@ -17,6 +18,9 @@ const miningBotAmount = document.getElementById("miningBotAmount");
 const oreExtCost = document.getElementById("oreExtCost");
 const oreExtAmount = document.getElementById("oreExtAmount");
 
+const drillRovCost = document.getElementById("drillRovCost");
+const drillRovAmount = document.getElementById("drillRovAmount")
+
 // Building Amounts & New Costs
 
 let droneNum = 0;
@@ -27,6 +31,9 @@ let miningBotNewCost = 100;
 
 let oreExtNum = 0;
 let oreExtNewCost = 1100;
+
+let drillRovNum = 0;
+let drillRovNewCost = 12000;
 
 let ops = 0;
 let ore = 0;
@@ -83,7 +90,7 @@ droneButton.addEventListener("click", function () {
 // miningBot func
 miningBotButton.addEventListener("click", function () {
     if (ore >= miningBotNewCost) {
-        ore -= miningBotNewCost;
+        ore -= miningBotNewCost;2
         ops += 1;
         miningBotNum++;
         miningBotNewCost = priceIncrease(100, miningBotNum);
