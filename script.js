@@ -36,7 +36,7 @@ let drillRovNum = 0;
 let drillRovNewCost = 12000;
 
 let ops = 0;
-let ore = 12000000;
+let ore = 0;
 
 function updateHTML() {
     oreH1.innerHTML = Math.round(ore * 10) / 10;
