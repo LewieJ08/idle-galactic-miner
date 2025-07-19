@@ -36,7 +36,7 @@ let drillRovNum = 0;
 let drillRovNewCost = 12000;
 
 let ops = 0;
-let ore = 0;
+let ore = 12000000;
 
 function updateHTML() {
     oreH1.innerHTML = Math.round(ore * 10) / 10;
@@ -50,6 +50,9 @@ function updateHTML() {
 
     oreExtCost.innerHTML = Math.ceil(oreExtNewCost);
     oreExtAmount.innerHTML = oreExtNum;
+
+    drillRovCost.innerHTML = Math.ceil(drillRovNewCost);
+    drillRovAmount.innerHTML = drillRovNum;
 }
 
 function priceIncrease(baseCost, buildingNum) {
@@ -108,6 +111,19 @@ oreExtButton.addEventListener("click", function () {
         ops += 8;
         oreExtNum++;
         oreExtNewCost = priceIncrease(1100, oreExtNum);
+        updateHTML();
+    }
+    else {
+        window.alert("Not Enough Ore");
+    }
+})
+
+drillRovButton.addEventListener("click", function () {
+    if (ore >= drillRovNewCost) {
+        ore -= drillRovNewCost;
+        ops += 47;
+        drillRovNum++;
+        drillRovNewCost = priceIncrease(12000, drillRovNum);
         updateHTML();
     }
     else {
