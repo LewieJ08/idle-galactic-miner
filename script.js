@@ -69,7 +69,7 @@ function opsFunc() {
 
 setInterval(opsFunc, 1000)
 
-button.addEventListener("click", function () {
+button.addEventListener("click", () => {
     ore++;
     updateHTML();
 });
@@ -77,7 +77,7 @@ button.addEventListener("click", function () {
 // SHOP BUTTONS
 
 // drone Func
-droneButton.addEventListener("click", function () {
+droneButton.addEventListener("click", () => {
     if (ore >= droneNewCost) {
         ore -= droneNewCost;
         ops += 0.1;
@@ -91,7 +91,7 @@ droneButton.addEventListener("click", function () {
 })
 
 // miningBot func
-miningBotButton.addEventListener("click", function () {
+miningBotButton.addEventListener("click", () => {
     if (ore >= miningBotNewCost) {
         ore -= miningBotNewCost;2
         ops += 1;
@@ -105,7 +105,7 @@ miningBotButton.addEventListener("click", function () {
 })
 
 // oreExt func
-oreExtButton.addEventListener("click", function () {
+oreExtButton.addEventListener("click", () => {
     if (ore >= oreExtNewCost) {
         ore -= oreExtNewCost;
         ops += 8;
@@ -118,7 +118,7 @@ oreExtButton.addEventListener("click", function () {
     }
 })
 
-drillRovButton.addEventListener("click", function () {
+drillRovButton.addEventListener("click", () => {
     if (ore >= drillRovNewCost) {
         ore -= drillRovNewCost;
         ops += 47;
