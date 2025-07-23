@@ -19,7 +19,10 @@ const oreExtCost = document.getElementById("oreExtCost");
 const oreExtAmount = document.getElementById("oreExtAmount");
 
 const drillRovCost = document.getElementById("drillRovCost");
-const drillRovAmount = document.getElementById("drillRovAmount")
+const drillRovAmount = document.getElementById("drillRovAmount");
+
+const miningSatCost = document.getElementById("miningSatCost");
+const miningSatAmount = document.getElementById("miningSatAmount");
 
 // Building Amounts & New Costs
 
@@ -34,6 +37,9 @@ let oreExtNewCost = 1100;
 
 let drillRovNum = 0;
 let drillRovNewCost = 12000;
+
+let miningSatNum = 0;
+let miningSatNewCost = 130000
 
 let ops = 0;
 let ore = 0;
@@ -130,3 +136,4 @@ drillRovButton.addEventListener("click", () => {
         window.alert("Not Enough Ore");
     }
 })
+
