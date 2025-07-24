@@ -40,7 +40,7 @@ let drillRovNum = 0;
 let drillRovNewCost = 12000;
 
 let miningSatNum = 0;
-let miningSatNewCost = 130000
+let miningSatNewCost = 130000;
 
 let ops = 0;
 let ore = 0;
