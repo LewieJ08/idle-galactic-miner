@@ -62,7 +62,7 @@ function updateHTML() {
     drillRovAmount.innerHTML = drillRovNum;
 
     miningSatCost.innerHTML = Math.ceil(miningSatNewCost);
-    miningSatButton.innerHTML = miningSatNum;
+    miningSatAmount.innerHTML = miningSatNum;
 }
 
 function priceIncrease(baseCost, buildingNum) {
