@@ -7,6 +7,7 @@ const droneButton = document.getElementById("drone");
 const miningBotButton = document.getElementById("miningBot");
 const oreExtButton = document.getElementById("oreExt");
 const drillRovButton = document.getElementById("drillRov");
+const miningSatButton = document.getElementById("miningSat");
 
 // Building Costs and Amounts
 const droneCost = document.getElementById("droneCost");
@@ -59,6 +60,9 @@ function updateHTML() {
 
     drillRovCost.innerHTML = Math.ceil(drillRovNewCost);
     drillRovAmount.innerHTML = drillRovNum;
+
+    miningSatCost.innerHTML = Math.ceil(miningSatNewCost);
+    miningSatButton.innerHTML = miningSatNum;
 }
 
 function priceIncrease(baseCost, buildingNum) {
@@ -130,6 +134,19 @@ drillRovButton.addEventListener("click", () => {
         ops += 47;
         drillRovNum++;
         drillRovNewCost = priceIncrease(12000, drillRovNum);
+        updateHTML();
+    }
+    else {
+        window.alert("Not Enough Ore");
+    }
+})
+
+miningSatButton.addEventListener("click", () => {
+    if (ore >= miningSatNewCost) {
+        ore -= miningSatNewCost;
+        ops += 260;
+        miningSatNum++;
+        miningSatNewCost = priceIncrease(130000, miningSatNum);
         updateHTML();
     }
     else {
