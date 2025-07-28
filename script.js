@@ -128,6 +128,7 @@ oreExtButton.addEventListener("click", () => {
     }
 })
 
+// drillRov Func 
 drillRovButton.addEventListener("click", () => {
     if (ore >= drillRovNewCost) {
         ore -= drillRovNewCost;
@@ -141,6 +142,7 @@ drillRovButton.addEventListener("click", () => {
     }
 })
 
+// miningSat Func
 miningSatButton.addEventListener("click", () => {
     if (ore >= miningSatNewCost) {
         ore -= miningSatNewCost;
